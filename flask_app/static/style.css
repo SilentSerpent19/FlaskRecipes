@@ -1,0 +1,246 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+.navbar {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+.add-card, .edit-card, .login-card, .signup-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 2rem;
+}
+.add-header, .edit-header, .login-header, .signup-header {
+    background: linear-gradient(45deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+}
+.add-header::after, .edit-header::after, .signup-header::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom right, transparent 49%, white 50%);
+}
+.add-body, .edit-body, .login-body, .signup-body {
+    padding: 3rem 2rem 2rem 2rem;
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-label {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1.15rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #e9ecef;
+    padding: 0.75rem 1rem;
+    transition: all 0.3s ease;
+}
+.form-control:focus {
+    border-color: #4b6cb7;
+    box-shadow: 0 0 0 0.2rem rgba(75, 108, 183, 0.25);
+}
+.form-check-input:checked {
+    background-color: #4b6cb7;
+    border-color: #4b6cb7;
+}
+.btn {
+    border-radius: 8px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+.btn-primary {
+    background: linear-gradient(45deg, #4b6cb7 0%, #182848 100%);
+    border: none;
+}
+.btn-secondary {
+    background: linear-gradient(45deg, #6c757d 0%, #495057 100%);
+    border: none;
+    color: white;
+}
+.btn-danger {
+    background: linear-gradient(45deg, #ff416c 0%, #ff4b2b 100%);
+    border: none;
+}
+.btn-warning {
+    background: linear-gradient(45deg, #f7971e 0%, #ffd200 100%);
+    border: none;
+    color: white;
+}
+.btn-info {
+    background: linear-gradient(45deg, #2193b0 0%, #6dd5ed 100%);
+    border: none;
+    color: white;
+}
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.time-option {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.time-option:hover {
+    background: #e9ecef;
+}
+.time-option.selected {
+    background: #4b6cb7;
+    color: white;
+}
+.time-option.selected .form-check-input {
+    border-color: white;
+}
+.time-option.selected .form-check-label {
+    color: white;
+}
+.text-center {
+    text-align: center;
+}
+.signup-link, .login-link {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.signup-link a, .login-link a {
+    color: #4b6cb7;
+    font-weight: 600;
+    text-decoration: none;
+}
+.signup-link a:hover, .login-link a:hover {
+    text-decoration: underline;
+}
+.form-check {
+    display: inline-block;
+    margin-right: 1.5rem;
+}
+.table {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.table thead {
+    background: linear-gradient(45deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+}
+.table th, .table td {
+    padding: 15px;
+    vertical-align: middle;
+}
+.badge {
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+.badge-yes {
+    background: linear-gradient(45deg, #11998e 0%, #38ef7d 100%);
+    color: white;
+}
+.badge-no {
+    background: linear-gradient(45deg, #ff416c 0%, #ff4b2b 100%);
+    color: white;
+}
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+.page-title {
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.flash-messages {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.recipe-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.recipe-header {
+    background: linear-gradient(45deg, #4b6cb7 0%, #182848 100%);
+    color: white;
+    padding: 2rem;
+    position: relative;
+    text-align: left;
+}
+.recipe-header h1 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+.recipe-header::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom right, transparent 49%, white 50%);
+}
+.recipe-body {
+    padding: 2rem;
+}
+.recipe-section {
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+.recipe-section h5 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.recipe-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.meta-item {
+    background: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.recipe-footer {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+} 
